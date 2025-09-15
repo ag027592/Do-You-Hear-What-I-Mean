@@ -39,7 +39,7 @@
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=N1UuQSUAAAAJ&hl=zh-TW">Yi-Cheng Lin</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=your-id&user=_d7pcs4AAAAJ">Huang-Cheng Chou</a><sup>2</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=_d7pcs4AAAAJ">Huang-Cheng Chou</a><sup>2</sup>,</span>
             <span class="author-block">
               <a href="https://www.linkedin.com/in/tzu-chieh-wei-665560248/">Tzu-Chieh Wei</a><sup>3</sup>,</span>
             <span class="author-block">
@@ -124,7 +124,6 @@
 <!--/ Abstract -->
 
 
-<!-- 
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Audio Examples</h2>
@@ -166,8 +165,6 @@
     
   </div>
 </section>
--->
-
 
 
 <!-- Evaluation Framework -->
@@ -228,6 +225,199 @@
   </div>
 </section>
 <!--/ Results -->
+
+<!-- Appendix -->
+<section class="section" id="Appendix">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Appendix</h2>
+
+    <!-- Prompt for Transcription Generation -->
+    <h3 class="title is-4">Prompt for Transcription Generation</h3>
+    <div class="box content">
+        <p>
+            <strong>Task:</strong> Generate 10-15 word sentences as "Text prompts," describing life conditions in specific contexts without using inherently polar or sentimental words. The generated sentences are naturally spoken in interaction, for evaluating how well state-of-the-art text-to-speech (TTS) models synthesize emotion.
+        </p>
+        <p>
+            <strong>Steps:</strong><br>
+            1) Select Context: family, friends, customer, lover, or teacher–student.<br>
+            2) Sentence Construction: create a 10–15 word sentence describing the context.<br>
+            3) Polarity Check: exclude inherently polar or sentimental words.<br>
+            4) Repetition: generate sentences across various contexts for diversity.
+        </p>
+        <p>
+            <strong>Output Format:</strong> List the interaction context followed by the 10–15 word sentence, neutrally described.
+        </p>
+        <p>
+            <strong>Examples:</strong><br>
+            - <em>Friends</em>: I plan to buy plates, forks, knives, and glasses arranged on the table for the meal. Would you want to come?<br>
+            - <em>Traveling</em>: Schedule of our trip includes flight departure, hotel check-in procedure, museum visit, and city tour.
+        </p>
+        <p>
+            <strong>Notes:</strong> Sentences must remain descriptive and contextually relevant, with neutral language. The prompt design ensures that TTS evaluation focuses on emotional style alignment.
+        </p>
+    </div>
+
+    <!-- Word Frequency and Emotion Intensity -->
+    <h3 class="title is-4">Word Frequency and Emotion Intensity</h3>
+    <div class="table-container">
+        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th colspan="2">Happy Intensity</th>
+                    <th>WF WIKI</th>
+                    <th colspan="2">Sad Intensity</th>
+                    <th>WF WIKI</th>
+                    <th colspan="2">Angry Intensity</th>
+                    <th>WF WIKI</th>
+                    <th colspan="2">Surprised Intensity</th>
+                    <th>WF WIKI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Ecstatic</strong></td><td>0.954</td><td>2,979</td>
+                    <td><strong>Heartbroken</strong></td><td>0.969</td><td>2,254</td>
+                    <td><strong>Outaged</strong></td><td>0.964</td><td>6,784</td>
+                    <td><strong>Surprised</strong></td><td>0.930</td><td>51,083</td>
+                </tr>
+                <tr>
+                    <td><strong>Overjoyed</strong></td><td>0.909</td><td>1,921</td>
+                    <td><strong>Sad</strong></td><td>0.864</td><td>6,819</td>
+                    <td><strong>Angry</strong></td><td>0.824</td><td>34,184</td>
+                    <td><strong>Stunned</strong></td><td>0.820</td><td>6,254</td>
+                </tr>
+                <tr>
+                    <td><strong>Happy</strong></td><td>0.788</td><td>80,205</td>
+                    <td><strong>Unhappy</strong></td><td>0.750</td><td>16,934</td>
+                    <td><strong>Irritated</strong></td><td>0.706</td><td>2,860</td>
+                    <td><strong>Amazed</strong></td><td>0.781</td><td>1,255</td>
+                </tr>
+                <tr>
+                    <td><strong>Content</strong></td><td>0.688</td><td>182,702</td>
+                    <td><strong>Disappointed</strong></td><td>0.636</td><td>19,109</td>
+                    <td><strong>Frustrated</strong></td><td>0.636</td><td>17,278</td>
+                    <td><strong>Uncertain</strong></td><td>0.711</td><td>24,728</td>
+                </tr>
+                <tr>
+                    <td><strong>Satisfied</strong></td><td>0.500</td><td>22,700</td>
+                    <td><strong>Gloomy</strong></td><td>0.578</td><td>2,672</td>
+                    <td><strong>Upset</strong></td><td>0.439</td><td>39,299</td>
+                    <td><strong>Intrigued</strong></td><td>0.430</td><td>4,679</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Transcription Examples -->
+    <h3 class="title is-4">Transcription Examples</h3>
+    <div class="table-container">
+        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Context</th>
+                    <th>Transcription</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Family</strong></td><td>You always make breakfast on Sundays.</td></tr>
+                <tr><td><strong>Friends</strong></td><td>Let's explore downtown tonight without plans.</td></tr>
+                <tr><td><strong>Customer</strong></td><td>Your order is ready for pickup.</td></tr>
+                <tr><td><strong>Lover</strong></td><td>I adore every moment with you.</td></tr>
+                <tr><td><strong>Teacher-Student</strong></td><td>Submit your project before class tomorrow.</td></tr>
+                <tr><td><strong>Sibling</strong></td><td>You might borrow my car later.</td></tr>
+                <tr><td><strong>Colleagues</strong></td><td>Our meeting starts at nine sharp.</td></tr>
+                <tr><td><strong>Neighbor</strong></td><td>Please return my gardening tools soon.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Adjective and Adverb Mappings -->
+    <h3 class="title is-4">Adjective and Adverb Mappings</h3>
+    <div class="table-container">
+        <table class="table is-bordered is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th colspan="5">Adjective (Adj.) / Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Pitch</strong></td><td>Low</td><td>High</td><td></td><td></td><td></td></tr>
+                <tr><td><strong>Loudness</strong></td><td>Quiet</td><td>Loud</td><td></td><td></td><td></td></tr>
+                <tr><td><strong>Speed Rate</strong></td><td>Slow</td><td>Fast</td><td></td><td></td><td></td></tr>
+                <tr><td colspan="6"></td></tr> <!-- Spacer Row -->
+                <tr><td><strong>Age</strong></td><td>Child</td><td>Teenage</td><td>Adult</td><td>Elderly</td><td></td></tr>
+                <tr><td colspan="6"></td></tr> <!-- Spacer Row -->
+                <tr><td><strong>Adv. Deg. Level</strong></td><td><strong>1</strong> (Slightly)</td><td><strong>2</strong></td><td><strong>3</strong> (Very)</td><td><strong>4</strong> (Extremely)</td><td></td></tr>
+                <tr><td colspan="6"></td></tr> <!-- Spacer Row -->
+                <tr><td><strong>Emotion Level</strong></td><td><strong>1</strong></td><td><strong>2</strong></td><td><strong>3</strong></td><td><strong>4</strong></td><td><strong>5</strong></td></tr>
+                <tr><td><strong>Happy-I.A.</strong></td><td>Satisfied</td><td>Content</td><td>Happy</td><td>Overjoyed</td><td>Ecstatic</td></tr>
+                <tr><td><strong>Sad-I.A.</strong></td><td>Gloomy</td><td>Disappointed</td><td>Unhappy</td><td>Sad</td><td>Heartbroken</td></tr>
+                <tr><td><strong>Angry-I.A.</strong></td><td>Upset</td><td>Frustrated</td><td>Irritated</td><td>Angry</td><td>Outraged</td></tr>
+                <tr><td><strong>Surprised-I.A.</strong></td><td>Intrigued</td><td>Unexpected</td><td>Amazed</td><td>Stunned</td><td>Surprised</td></tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- Prompt Template Examples -->
+    <h3 class="title is-4">Prompt Template Examples</h3>
+    <div class="table-container">
+        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Template 1</th>
+                    <th>Example</th>
+                    <th>Template 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Pitch</strong></td>
+                    <td rowspan="4" style="vertical-align: middle;">Speak in a/an "Adv. Deg." "Adj." tone.</td>
+                    <td>Speak in a Very High tone.</td>
+                    <td>Voice: "Adv. Deg." "Adj."</td>
+                </tr>
+                <tr>
+                    <td><strong>Loudness</strong></td>
+                    <td>Speak in a Slightly Quiet tone.</td>
+                    <td>Tone: "Adv. Deg." "Adj."</td>
+                </tr>
+                <tr>
+                    <td><strong>Speed Rate</strong></td>
+                    <td>Speak in a Very Fast tone.</td>
+                    <td>Pacing: "Adv. Deg." "Adj."</td>
+                </tr>
+                <tr>
+                    <td><strong>Discrete Emotion</strong></td>
+                    <td>Speak in a Happy tone.</td>
+                    <td>Emotion: "Adv. Deg." "Adj."</td>
+                </tr>
+                <tr>
+                    <td><strong>Emotion-I.A.</strong></td>
+                    <td>Speak in a/an "Adj." tone.</td>
+                    <td>Speak in an Ecstatic tone.</td>
+                    <td>Emotion: "Adj."</td>
+                </tr>
+                <tr>
+                    <td><strong>Emphasis</strong></td>
+                    <td>Articulate clearly, placing special stress on the term "word".</td>
+                    <td></td>
+                    <td>Pronunciation: Clear and precise, empathize on keyword "word".</td>
+                </tr>
+                <tr>
+                    <td><strong>Age</strong></td>
+                    <td>Use a/an "age group"'s voice.</td>
+                    <td>Use a/an Child's voice.</td>
+                    <td>Delivery: A classic "age group" tone.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+  </div>
+</section>
+<!--/ Appendix -->
 
 
 <section class="section" id="BibTeX">
