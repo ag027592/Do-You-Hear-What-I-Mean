@@ -4,11 +4,11 @@ This is the repository that contains source code for the [Nerfies website](https
 
 If you find Nerfies useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@inproceedings{Lin_2026,
+  title     = {Do You Hear What I Mean? Quantifying the Instruction-Perception Gap in Instruction-Guided Expressive Text-to-Speech Systems},
+  author    = {Lin, Yi-Cheng and Chou, Huang-Cheng and Wei, Tzu-Chieh and Chen, Kuan-Yu and Lee, Hung-yi},
+  booktitle = {Submission to IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  year      = {2026}
 }
 ```
 
