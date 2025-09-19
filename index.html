@@ -106,7 +106,7 @@
     <div class="hero-body">
       <img src="static/images/teaser.png" alt="Teaser image showing analysis of TTS models."/>
       <h2 class="subtitle has-text-centered">
-        We systematically evaluate the gap between natural language instructions and listener perception in modern Text-to-Speech systems across 5 expressive dimensions.
+        We systematically evaluate the gap between natural language instructions and listener perception in modern Text-to-Speech systems across 4 expressive and 3 acoustic dimensions.
       </h2>
     </div>
   </div>
@@ -121,8 +121,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Instruction-guided text-to-speech (ITTS) enables users to control speech generation through natural language prompts, offering a more intuitive interface than traditional TTS. However, it is unclear to what extent the instructions align with human perception. This work presents a perceptual analysis of ITTS controllability across 5 expressive dimensions (adverbs of degree, discrete emotion, graded emotion intensity, word-level emphasis, speaker age) and 3 acoustic dimensions (loudness, pitch, speaking rate). Our work uncovers significant gaps between intended instructions and perceived outcomes, as revealed by large-scale human evaluations. Our findings reveal the potential for significant enhancement in current ITTS models, particularly in how different emotion intensity in the instruction shapes controllability. To support reproducibility, we also describe an easy-to-follow data collection and analysis pipeline that can be applied to future ITTS systems. Our findings provide actionable insights into the limitations of current models and pathways toward more perceptually aligned speech synthesis.
-          </p>
+           Instruction-guided text-to-speech (ITTS) enables users to control speech generation through natural language prompts, offering a more intuitive interface than traditional TTS. However, the alignment between user style instructions and listener perception remains largely unexplored. This work first presents a perceptual analysis of ITTS controllability across two expressive dimensions (adverbs of degree and graded emotion intensity) and collects human ratings on speaker age and word-level emphasis attributes. To comprehensively reveal the instruction-perception gap, we provide a data collection with large-scale human evaluations, named Expressive VOice Control (E-VOC) corpus. Furthermore, we reveal that (1) gpt-4o-mini-tts is the most reliable ITTS model with great alignment between instruction and generated utterances across acoustic dimensions. (2) The 5 analyzed ITTS systems tend to generate Adult voices even when the instructions ask to use child or elderly voices. (3) Fine-grained control remains a major challenge, indicating that most ITTS systems have substantial room for improvement in interpreting slightly different attribute instructions.          </p>
         </div>
       </div>
     </div>
@@ -136,7 +135,7 @@
     <h2 class="title is-3">Audio Examples</h2>
     <div class="content has-text-justified">
       <p>
-        Listen to examples showing how different models interpret the same instruction. How well do they align with your perception?
+        Listen to examples showing how different models interpret the same instruction. How well do they align with your perception based on the instructions?
       </p>
     </div>
 
@@ -849,12 +848,12 @@
                     <td>Tone: "Adv. Deg." "Adj."</td>
                 </tr>
                 <tr>
-                    <td><strong>Speed Rate</strong></td>
+                    <td><strong>Speaking Rate</strong></td>
                     <td>Speak in a Very Fast tone.</td>
                     <td>Pacing: "Adv. Deg." "Adj."</td>
                 </tr>
                 <tr>
-                    <td><strong>Discrete Emotion</strong></td>
+                    <td><strong>Emotion</strong></td>
                     <td>Speak in a Happy tone.</td>
                     <td>Emotion: "Adv. Deg." "Adj."</td>
                 </tr>
