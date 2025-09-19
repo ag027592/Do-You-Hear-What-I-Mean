@@ -133,36 +133,470 @@
       </p>
     </div>
 
-    <!-- Example 1: Happy -->
-    <h3 class="title is-4">Instruction: "Speak in a <strong>very happy</strong> tone."</h3>
-    <p><strong>Text:</strong> "You always make breakfast on Sundays."</p>
-    <strong>gpt-4o-mini-tts:</strong> <audio controls src="static/audio/happy_gpt4o.wav" style="vertical-align: middle;"></audio><br/>
-    <strong>Parler-TTS-large:</strong> <audio controls src="static/audio/happy_parler_large.wav" style="vertical-align: middle;"></audio><br/>
-    <strong>PromptTTS++:</strong> <audio controls src="static/audio/happy_prompttts.wav" style="vertical-align: middle;"></audio><br/>
-    <hr>
+    <!-- Task 1: Adverbs of Degree -->
+    <h3 class="title is-4" style="margin-top: 2.5rem;">Task 1: Adverbs of Degree</h3>
+    <p>Models are instructed to generate speech with varying emotional intensity using adverbs like "extremely," "very," and "slightly."</p>
 
-    <!-- Example 2: Sad -->
-    <h3 class="title is-4">Instruction: "Speak in an <strong>extremely sad</strong> tone."</h3>
-    <p><strong>Text:</strong> "Our meeting starts at nine sharp."</p>
-    <strong>gpt-4o-mini-tts:</strong> <audio controls src="static/audio/sad_gpt4o.wav" style="vertical-align: middle;"></audio><br/>
-    <strong>Parler-TTS-large:</strong> <audio controls src="static/audio/sad_parler_large.wav" style="vertical-align: middle;"></audio><br/>
-    <strong>PromptTTS++:</strong> <audio controls src="static/audio/sad_prompttts.wav" style="vertical-align: middle;"></audio><br/>
-    <hr>
+    <!-- Emotion: Angry -->
+    <h4 class="title is-5" style="margin-top: 2rem;">Emotion: Angry</h4>
+    <div class="table-container">
+        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Context</th>
+                    <th>Transcript</th>
+                    <th>Model</th>
+                    <th>Extremely</th>
+                    <th>Very</th>
+                    <th>Slightly</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="5" style="vertical-align: middle;">Teacher-Student</td>
+                    <td rowspan="5" style="vertical-align: middle;">Our professor outlines assignment expectations while the student records the key instructions.</td>
+                    <td>gpt-4o-mini-tts</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Teacher_gpt4o_S1_extremely_angry.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Teacher_gpt4o_S1_very_angry.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Teacher_gpt4o_S1_slightly_angry.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>Parler-TTS-large-v1</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Teacher_Parler-TTS-large-v1_S1_extremely_angry.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Teacher_Parler-TTS-large-v1_S1_very_angry.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Teacher_Parler-TTS-large-v1_S1_slightly_angry.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>Parler-TTS-mini-v1</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Teacher_Parler-TTS-mini-v1_S1_extremely_angry.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Teacher_Parler-TTS-mini-v1_S1_very_angry.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Teacher_Parler-TTS-mini-v1_S1_slightly_angry.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>PromptTTS++</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Teacher_PromptTTS++_S1_extremely_angry.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Teacher_PromptTTS++_S1_very_angry.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Teacher_PromptTTS++_S1_slightly_angry.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>UniAudio</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Teacher_UniAudio_S1_extremely_angry.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Teacher_UniAudio_S1_very_angry.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Teacher_UniAudio_S1_slightly_angry.wav"></audio></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <!-- Example 3: Age -->
-    <h3 class="title is-4">Instruction: "Speak like a <strong>child</strong>."</h3>
-    <p><strong>Text:</strong> "Let's explore downtown tonight without plans."</p>
-    <strong>gpt-4o-mini-tts:</strong> <audio controls src="static/audio/child_gpt4o.wav" style="vertical-align: middle;"></audio><br/>
-    <strong>UniAudio:</strong> <audio controls src="static/audio/child_uniaudio.wav" style="vertical-align: middle;"></audio><br/>
-    <strong>Parler-TTS-mini:</strong> <audio controls src="static/audio/child_parler_mini.wav" style="vertical-align: middle;"></audio><br/>
-    <hr>
+    <!-- Emotion: Happy -->
+    <h4 class="title is-5" style="margin-top: 2rem;">Emotion: Happy</h4>
+    <div class="table-container">
+        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Context</th>
+                    <th>Transcript</th>
+                    <th>Model</th>
+                    <th>Extremely</th>
+                    <th>Very</th>
+                    <th>Slightly</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="5" style="vertical-align: middle;">Normal</td>
+                    <td rowspan="5" style="vertical-align: middle;">I'm looking at the forecast, and it says there's a 50% chance of rain this afternoon.</td>
+                    <td>gpt-4o-mini-tts</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Normal_gpt4o_S1_extremely_happy.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Normal_gpt4o_S1_very_happy.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Normal_gpt4o_S1_slightly_happy.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>Parler-TTS-large-v1</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Normal_Parler-TTS-large-v1_S1_extremely_happy.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Normal_Parler-TTS-large-v1_S1_very_happy.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Normal_Parler-TTS-large-v1_S1_slightly_happy.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>Parler-TTS-mini-v1</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Normal_Parler-TTS-mini-v1_S1_extremely_happy.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Normal_Parler-TTS-mini-v1_S1_very_happy.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Normal_Parler-TTS-mini-v1_S1_slightly_happy.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>PromptTTS++</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Normal_PromptTTS++_S1_extremely_happy.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Normal_PromptTTS++_S1_very_happy.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Normal_PromptTTS++_S1_slightly_happy.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>UniAudio</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Normal_UniAudio_S1_extremely_happy.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Normal_UniAudio_S1_very_happy.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Normal_UniAudio_S1_slightly_happy.wav"></audio></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Emotion: Sad -->
+    <h4 class="title is-5" style="margin-top: 2rem;">Emotion: Sad</h4>
+    <div class="table-container">
+        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Context</th>
+                    <th>Transcript</th>
+                    <th>Model</th>
+                    <th>Extremely</th>
+                    <th>Very</th>
+                    <th>Slightly</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="5" style="vertical-align: middle;">Lover</td>
+                    <td rowspan="5" style="vertical-align: middle;">We decide on a meeting location with coffee and a reserved table tonight.</td>
+                    <td>gpt-4o-mini-tts</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Lover_gpt4o_S1_extremely_sad.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Lover_gpt4o_S1_very_sad.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Lover_gpt4o_S1_slightly_sad.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>Parler-TTS-large-v1</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Lover_Parler-TTS-large-v1_S1_extremely_sad.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Lover_Parler-TTS-large-v1_S1_very_sad.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Lover_Parler-TTS-large-v1_S1_slightly_sad.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>Parler-TTS-mini-v1</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Lover_Parler-TTS-mini-v1_S1_extremely_sad.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Lover_Parler-TTS-mini-v1_S1_very_sad.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Lover_Parler-TTS-mini-v1_S1_slightly_sad.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>PromptTTS++</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Lover_PromptTTS++_S1_extremely_sad.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Lover_PromptTTS++_S1_very_sad.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Lover_PromptTTS++_S1_slightly_sad.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>UniAudio</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Lover_UniAudio_S1_extremely_sad.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Lover_UniAudio_S1_very_sad.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Lover_UniAudio_S1_slightly_sad.wav"></audio></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     
-    <!-- Example 4: Emphasis -->
-    <h3 class="title is-4">Instruction: "Articulate clearly, placing special stress on the term '<strong>borrow</strong>'."</h3>
-    <p><strong>Text:</strong> "You might borrow my car later."</p>
-    <strong>gpt-4o-mini-tts:</strong> <audio controls src="static/audio/emphasis_gpt4o.wav" style="vertical-align: middle;"></audio><br/>
-    <strong>Parler-TTS-large:</strong> <audio controls src="static/audio/emphasis_parler_large.wav" style="vertical-align: middle;"></audio><br/>
-    
+    <!-- Emotion: Surprise -->
+    <h4 class="title is-5" style="margin-top: 2rem;">Emotion: Surprised</h4>
+    <div class="table-container">
+        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Context</th>
+                    <th>Transcript</th>
+                    <th>Model</th>
+                    <th>Extremely</th>
+                    <th>Very</th>
+                    <th>Slightly</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="5" style="vertical-align: middle;">Friends</td>
+                    <td rowspan="5" style="vertical-align: middle;">We gather near the park to discuss plans for the upcoming weekend.</td>
+                    <td>gpt-4o-mini-tts</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Friends_gpt4o_S1_extremely_surprised.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Friends_gpt4o_S1_very_surprised.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Friends_gpt4o_S1_slightly_surprised.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>Parler-TTS-large-v1</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Friends_Parler-TTS-large-v1_S1_extremely_surprised.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Friends_Parler-TTS-large-v1_S1_very_surprised.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Friends_Parler-TTS-large-v1_S1_slightly_surprised.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>Parler-TTS-mini-v1</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Friends_Parler-TTS-mini-v1_S1_extremely_surprised.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Friends_Parler-TTS-mini-v1_S1_very_surprised.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Friends_Parler-TTS-mini-v1_S1_slightly_surprised.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>PromptTTS++</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Friends_PromptTTS++_S1_extremely_surprised.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Friends_PromptTTS++_S1_very_surprised.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Friends_PromptTTS++_S1_slightly_surprised.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>UniAudio</td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Friends_UniAudio_S1_extremely_surprised.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Friends_UniAudio_S1_very_surprised.wav"></audio></td>
+                    <td><audio controls src="static/audio/adv/Task1_Adv_Degree_T1_Friends_UniAudio_S1_slightly_surprised.wav"></audio></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Task 2: Graded Emotion -->
+    <h3 class="title is-4" style="margin-top: 2.5rem;">Task 2: Graded Emotion Intensity</h3>
+    <p>Models are instructed to generate speech using adjectives that represent different levels of emotional intensity.</p>
+
+    <!-- Emotion Group: Angry -->
+    <h4 class="title is-5" style="margin-top: 2rem;">Angry Emotion</h4>
+    <div class="table-container">
+        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Context</th>
+                    <th>Transcript</th>
+                    <th>Model</th>
+                    <th>Outraged</th>
+                    <th>Angry</th>
+                    <th>Irritated</th>
+                    <th>Frustrated</th>
+                    <th>Upset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="5" style="vertical-align: middle;">Customer</td>
+                    <td rowspan="5" style="vertical-align: middle;">I provide directions to the service desk where products are available for purchase.</td>
+                    <td>gpt-4o-mini-tts</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_gpt4o_S1_outraged.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_gpt4o_S1_angry.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_gpt4o_S1_irritated.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_gpt4o_S1_frustrated.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_gpt4o_S1_upset.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>Parler-TTS-large-v1</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_Parler-TTS-large-v1_S1_outraged.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_Parler-TTS-large-v1_S1_angry.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_Parler-TTS-large-v1_S1_irritated.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_Parler-TTS-large-v1_S1_frustrated.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_Parler-TTS-large-v1_S1_upset.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>Parler-TTS-mini-v1</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_Parler-TTS-mini-v1_S1_outraged.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_Parler-TTS-mini-v1_S1_angry.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_Parler-TTS-mini-v1_S1_irritated.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_Parler-TTS-mini-v1_S1_frustrated.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_Parler-TTS-mini-v1_S1_upset.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>PromptTTS++</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_PromptTTS++_S1_outraged.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_PromptTTS++_S1_angry.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_PromptTTS++_S1_irritated.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_PromptTTS++_S1_frustrated.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_PromptTTS++_S1_upset.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>UniAudio</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_UniAudio_S1_outraged.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_UniAudio_S1_angry.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_UniAudio_S1_irritated.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_UniAudio_S1_frustrated.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Customer_UniAudio_S1_upset.wav"></audio></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Emotion Group: Happy -->
+    <h4 class="title is-5" style="margin-top: 2rem;">Happy Emotion</h4>
+    <div class="table-container">
+        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Context</th>
+                    <th>Transcript</th>
+                    <th>Model</th>
+                    <th>Ecstatic</th>
+                    <th>Overjoyed</th>
+                    <th>Happy</th>
+                    <th>Content</th>
+                    <th>Satisfied</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="5" style="vertical-align: middle;">Family</td>
+                    <td rowspan="5" style="vertical-align: middle;">I arrange the dining setup with chairs, plates, cups, and napkins for dinner.</td>
+                    <td>gpt-4o-mini-tts</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_gpt4o_S1_ecstatic.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_gpt4o_S1_overjoyed.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_gpt4o_S1_happy.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_gpt4o_S1_content.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_gpt4o_S1_satisfied.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>Parler-TTS-large-v1</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_Parler-TTS-large-v1_S1_ecstatic.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_Parler-TTS-large-v1_S1_overjoyed.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_Parler-TTS-large-v1_S1_happy.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_Parler-TTS-large-v1_S1_content.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_Parler-TTS-large-v1_S1_satisfied.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>Parler-TTS-mini-v1</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_Parler-TTS-mini-v1_S1_ecstatic.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_Parler-TTS-mini-v1_S1_overjoyed.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_Parler-TTS-mini-v1_S1_happy.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_Parler-TTS-mini-v1_S1_content.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_Parler-TTS-mini-v1_S1_satisfied.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>PromptTTS++</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_PromptTTS++_S1_ecstatic.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_PromptTTS++_S1_overjoyed.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_PromptTTS++_S1_happy.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_PromptTTS++_S1_content.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_PromptTTS++_S1_satisfied.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>UniAudio</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_UniAudio_S1_ecstatic.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_UniAudio_S1_overjoyed.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_UniAudio_S1_happy.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_UniAudio_S1_content.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Family_UniAudio_S1_satisfied.wav"></audio></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Emotion Group: Sad -->
+    <h4 class="title is-5" style="margin-top: 2rem;">Sad Emotion</h4>
+    <div class="table-container">
+        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Context</th>
+                    <th>Transcript</th>
+                    <th>Model</th>
+                    <th>Heartbroken</th>
+                    <th>Sad</th>
+                    <th>Unhappy</th>
+                    <th>Disappointed</th>
+                    <th>Gloomy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="5" style="vertical-align: middle;">Friends</td>
+                    <td rowspan="5" style="vertical-align: middle;">We gather near the park to discuss plans for the upcoming weekend.</td>
+                    <td>gpt-4o-mini-tts</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_gpt4o_S1_heartbroken.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_gpt4o_S1_sad.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_gpt4o_S1_unhappy.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_gpt4o_S1_disappointed.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_gpt4o_S1_gloomy.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>Parler-TTS-large-v1</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_Parler-TTS-large-v1_S1_heartbroken.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_Parler-TTS-large-v1_S1_sad.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_Parler-TTS-large-v1_S1_unhappy.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_Parler-TTS-large-v1_S1_disappointed.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_Parler-TTS-large-v1_S1_gloomy.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>Parler-TTS-mini-v1</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_Parler-TTS-mini-v1_S1_heartbroken.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_Parler-TTS-mini-v1_S1_sad.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_Parler-TTS-mini-v1_S1_unhappy.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_Parler-TTS-mini-v1_S1_disappointed.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_Parler-TTS-mini-v1_S1_gloomy.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>PromptTTS++</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_PromptTTS++_S1_heartbroken.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_PromptTTS++_S1_sad.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_PromptTTS++_S1_unhappy.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_PromptTTS++_S1_disappointed.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_PromptTTS++_S1_gloomy.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>UniAudio</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_UniAudio_S1_heartbroken.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_UniAudio_S1_sad.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_UniAudio_S1_unhappy.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_UniAudio_S1_disappointed.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Friends_UniAudio_S1_gloomy.wav"></audio></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Emotion Group: Surprise -->
+    <h4 class="title is-5" style="margin-top: 2rem;">Surprise Emotion</h4>
+    <div class="table-container">
+        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Context</th>
+                    <th>Transcript</th>
+                    <th>Model</th>
+                    <th>Surprised</th>
+                    <th>Stunned</th>
+                    <th>Amazed</th>
+                    <th>Unexpected</th>
+                    <th>Intrigued</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="5" style="vertical-align: middle;">Lover</td>
+                    <td rowspan="5" style="vertical-align: middle;">We decide on a meeting location with coffee and a reserved table tonight.</td>
+                    <td>gpt-4o-mini-tts</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_gpt4o_S1_surprised.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_gpt4o_S1_stunned.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_gpt4o_S1_amazed.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_gpt4o_S1_unexpected.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_gpt4o_S1_intrigued.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>Parler-TTS-large-v1</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_Parler-TTS-large-v1_S1_surprised.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_Parler-TTS-large-v1_S1_stunned.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_Parler-TTS-large-v1_S1_amazed.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_Parler-TTS-large-v1_S1_unexpected.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_Parler-TTS-large-v1_S1_intrigued.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>Parler-TTS-mini-v1</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_Parler-TTS-mini-v1_S1_surprised.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_Parler-TTS-mini-v1_S1_stunned.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_Parler-TTS-mini-v1_S1_amazed.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_Parler-TTS-mini-v1_S1_unexpected.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_Parler-TTS-mini-v1_S1_intrigued.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>PromptTTS++</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_PromptTTS++_S1_surprised.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_PromptTTS++_S1_stunned.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_PromptTTS++_S1_amazed.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_PromptTTS++_S1_unexpected.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_PromptTTS++_S1_intrigued.wav"></audio></td>
+                </tr>
+                <tr>
+                    <td>UniAudio</td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_UniAudio_S1_surprised.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_UniAudio_S1_stunned.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_UniAudio_S1_amazed.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_UniAudio_S1_unexpected.wav"></audio></td>
+                    <td><audio controls src="static/audio/graded_emotion/Task2_Graded_Emotion_T1_Lover_UniAudio_S1_intrigued.wav"></audio></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
   </div>
 </section>
 
@@ -296,7 +730,7 @@
                     <td><strong>Content</strong></td><td>0.688</td><td>182,702</td>
                     <td><strong>Disappointed</strong></td><td>0.636</td><td>19,109</td>
                     <td><strong>Frustrated</strong></td><td>0.636</td><td>17,278</td>
-                    <td><strong>Uncertain</strong></td><td>0.711</td><td>24,728</td>
+                    <td><strong>Unexpected</strong></td><td>0.711</td><td>24,728</td>
                 </tr>
                 <tr>
                     <td><strong>Satisfied</strong></td><td>0.500</td><td>22,700</td>
@@ -323,7 +757,7 @@
                 <tr><td><strong>Friends</strong></td><td>Let's explore downtown tonight without plans.</td></tr>
                 <tr><td><strong>Customer</strong></td><td>Your order is ready for pickup.</td></tr>
                 <tr><td><strong>Lover</strong></td><td>I adore every moment with you.</td></tr>
-                <tr><td><strong>Teacher-Student</strong></td><td>Submit your project before class tomorrow.</td></tr>
+                <tr><td><strong>Teacher</strong></td><td>Submit your project before class tomorrow.</td></tr>
                 <tr><td><strong>Sibling</strong></td><td>You might borrow my car later.</td></tr>
                 <tr><td><strong>Colleagues</strong></td><td>Our meeting starts at nine sharp.</td></tr>
                 <tr><td><strong>Neighbor</strong></td><td>Please return my gardening tools soon.</td></tr>
