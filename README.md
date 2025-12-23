@@ -1,11 +1,11 @@
-# Nerfies
+# The Official Implementation of the paper "Do You Hear What I Mean? Quantifying the Instruction-Perception Gap in Instruction-Guided Expressive Text-to-Speech Systems"
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+###### This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
 
 If you find Our Paper useful for your work please cite:
 ```
 @inproceedings{Lin_2026,
-  title     = {Do You Hear What I Mean? Quantifying the Instruction-Perception Gap in Instruction-Guided Expressive Text-to-Speech Systems},
+  title     = {{Do You Hear What I Mean? Quantifying the Instruction-Perception Gap in Instruction-Guided Expressive Text-to-Speech Systems}},
   author    = {Lin, Yi-Cheng and Chou, Huang-Cheng and Wei, Tzu-Chieh and Chen, Kuan-Yu and Lee, Hung-yi},
   booktitle = {Submission to IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
   year      = {2026}
