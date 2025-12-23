@@ -2,7 +2,7 @@
 
 This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
 
-If you find Nerfies useful for your work please cite:
+If you find Our Paper useful for your work please cite:
 ```
 @inproceedings{Lin_2026,
   title     = {Do You Hear What I Mean? Quantifying the Instruction-Perception Gap in Instruction-Guided Expressive Text-to-Speech Systems},
