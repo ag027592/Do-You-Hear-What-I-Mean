@@ -1,0 +1,32 @@
+Creative Commons Attribution-ShareAlike 4.0 International
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+
+Copyright (c) 2026 Yi-Cheng Lin, Huang-Cheng Chou, Tzu-Chieh Wei,
+Kuan-Yu Chen, and Hung-yi Lee.
+
+Except for the exclusions listed below, the website source and original
+documentation in this repository are licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International Public License.
+
+License summary:
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Full legal code:
+https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+You are free to share and adapt the licensed material for any purpose,
+provided that you give appropriate credit, link to the license, indicate
+changes, and distribute adaptations under the same license.
+
+EXCLUSIONS
+
+The license above does not grant rights to:
+
+- the paper text or publisher-formatted paper;
+- third-party trademarks, logos, fonts, or libraries;
+- synthesized audio whose model or dataset terms impose separate conditions;
+- the E-VOC dataset and companion audio hosted outside this repository.
+
+Those materials remain subject to their respective rights and terms. See
+MEDIA_AND_DATA_LICENSE.md for repository-specific guidance.

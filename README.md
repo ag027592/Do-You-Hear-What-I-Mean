@@ -4,6 +4,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2509.13989-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2509.13989)
 [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-E--VOC-FFD21E)](https://huggingface.co/datasets/wizzzzzzzzz/E-VOC)
 [![Website](https://img.shields.io/badge/Project%20Page-live-1f6feb)](https://huangchengchou.com/Do-You-Hear-What-I-Mean/)
+[![License](https://img.shields.io/badge/Website-CC%20BY--SA%204.0-green.svg)](LICENSE)
 
 Project page for:
 
@@ -51,9 +52,11 @@ large-scale human ratings of synthesized speech from five ITTS systems:
 }
 ```
 
-## Acknowledgements
+## License and acknowledgements
 
 This page is adapted from the
 [Nerfies](https://github.com/nerfies/nerfies.github.io) project page template
 and, like the template, is licensed under a
-[Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+[Creative Commons Attribution-ShareAlike 4.0 International License](LICENSE).
+Synthesized audio, E-VOC data, the paper, and third-party assets may have
+separate terms; see [Media and data terms](MEDIA_AND_DATA_LICENSE.md).
