@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the paper below."
+title: "Do You Hear What I Mean? Quantifying the Instruction-Perception Gap in Instruction-Guided Expressive Text-to-Speech Systems"
+authors:
+  - family-names: Lin
+    given-names: Yi-Cheng
+  - family-names: Chou
+    given-names: Huang-Cheng
+  - family-names: Wei
+    given-names: Tzu-Chieh
+  - family-names: Chen
+    given-names: Kuan-Yu
+  - family-names: Lee
+    given-names: Hung-yi
+repository-code: "https://github.com/ag027592/Do-You-Hear-What-I-Mean"
+url: "https://huangchengchou.com/Do-You-Hear-What-I-Mean/"
+preferred-citation:
+  type: conference-paper
+  title: "Do You Hear What I Mean? Quantifying the Instruction-Perception Gap in Instruction-Guided Expressive Text-to-Speech Systems"
+  authors:
+    - family-names: Lin
+      given-names: Yi-Cheng
+    - family-names: Chou
+      given-names: Huang-Cheng
+    - family-names: Wei
+      given-names: Tzu-Chieh
+    - family-names: Chen
+      given-names: Kuan-Yu
+    - family-names: Lee
+      given-names: Hung-yi
+  collection-title: "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
+  year: 2026
+  start: 16472
+  end: 16476
+  doi: "10.1109/ICASSP55912.2026.11462935"
